@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammed Lamkhantar — Cybersecurity &amp; Dev</title>
+<meta name="description" content="Portfolio de Mohammed Lamkhantar, ingénieur cybersécurité ENSA Fès.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<div id="glow"></div>
+
+<nav id="nav">
+  <div class="ni">
+    <a href="#hero" class="logo">ML</a>
+    <div class="nls">
+      <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+      <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
+      <a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a>
+      <a href="#experience" data-fr="Parcours" data-en="Experience">Parcours</a>
+      <a href="#contact">Contact</a>
+      <button class="lang-btn" id="langBtn"><span class="dot"></span>FR / EN</button>
+    </div>
+    <button class="nt" id="nb"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mm" id="mm">
+  <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+  <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
+  <a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a>
+  <a href="#experience" data-fr="Parcours" data-en="Experience">Parcours</a>
+  <a href="#contact">Contact</a>
+  <button class="lang-btn" id="langBtn2"><span class="dot"></span>FR / EN</button>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div>
+    <div class="hbadge"><span class="pulse"></span><span data-fr="ENSA Fès — Cycle Ingénieur" data-en="ENSA Fes — Engineering Degree">ENSA Fès — Cycle Ingénieur</span></div>
+    <h1>Mohammed<br><span class="grad">Lamkhantar</span></h1>
+    <p class="hsub" data-fr="Développement Numérique &amp; Cybersécurité" data-en="Digital Development &amp; Cybersecurity">Développement Numérique &amp; Cybersécurité</p>
+    <p class="hdesc" data-fr="Élève ingénieur passionné par la sécurité offensive, la détection de menaces par IA et le développement d'outils de protection des systèmes d'information." data-en="Engineering student passionate about offensive security, AI-driven threat detection, and building information system protection tools.">Élève ingénieur passionné par la sécurité offensive, la détection de menaces par IA et le développement d'outils de protection des systèmes d'information.</p>
+    <div class="hbtns">
+      <a href="#projects" class="btn bs" data-fr="Voir mes projets" data-en="View projects">Voir mes projets</a>
+      <a href="cv_mohammed_lamkhantar_fr.pdf" target="_blank" class="btn bg" data-fr="Mon CV" data-en="My Resume">Mon CV</a>
+      <a href="#contact" class="btn bg">Contact</a>
+    </div>
+    <div class="stats">
+      <div><span class="stat-n" data-count="3">0</span><span class="stat-l" data-fr="Projets" data-en="Projects">Projets</span></div>
+      <div><span class="stat-n">1<sup>er</sup></span><span class="stat-l">MACC 2026</span></div>
+      <div><span class="stat-n" data-count="3">0</span><span class="stat-l">Certifications</span></div>
+    </div>
+  </div>
+  <div class="hr">
+    <div class="trm">
+      <div class="trm-top"><span class="d r"></span><span class="d y"></span><span class="d g"></span><span class="trm-t">lamkhantar@kali:~</span></div>
+      <div class="trm-body">
+        <div class="ln" id="t1"><span class="pr">$</span><span class="cmd" data-text="whoami"></span></div>
+        <div class="ln out hidden" id="t2">mohammed_lamkhantar</div>
+        <div class="ln hidden" id="t3"><span class="pr">$</span><span class="cmd" data-text="cat speciality.conf"></span></div>
+        <div class="ln out hidden" id="t4">Pentest | ML | Web Dev | DevOps</div>
+        <div class="ln hidden" id="t5"><span class="pr">$</span><span class="cmd" data-text="nmap --script=career 2026"></span></div>
+        <div class="ln out ok hidden" id="t6">[OPEN] PFA Cybersec internship - July 2026</div>
+        <div class="ln hidden" id="t7"><span class="cur"></span></div>
+      </div>
+    </div>
+    <!-- RADAR -->
+    <div class="radar">
+      <div class="radar-ring"></div>
+      <div class="radar-ring"></div>
+      <div class="radar-ring"></div>
+      <div class="radar-line"></div>
+      <div class="radar-center"></div>
+      <div class="orbit-dot"></div>
+      <div class="orbit-dot"></div>
+      <div class="orbit-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="w">
+    <div class="tag"><span data-fr="01 / À propos" data-en="01 / About">01 / À propos</span></div>
+    <h2 class="sh" data-fr="Un parcours entre <span class='grad'>code</span> et <span class='grad'>sécurité</span>" data-en="A journey between <span class='grad'>code</span> and <span class='grad'>security</span>">Un parcours entre <span class="grad">code</span> et <span class="grad">sécurité</span></h2>
+    <div class="bento">
+      <div class="bento-card b-wide ao">
+        <div class="bc-tag" data-fr="Profil" data-en="Profile">Profil</div>
+        <p data-fr="Actuellement en cycle ingénieur à l'ENSA de Fès, spécialité Développement Numérique et Cybersécurité. Passionné par la sécurité offensive, l'analyse forensique et la détection de menaces par IA. Classé 1er régional et 14ème national au MACC 2026 (DGSSI)." data-en="Currently pursuing an engineering degree at ENSA Fes, specializing in Digital Development and Cybersecurity. Passionate about offensive security, forensic analysis, and AI-driven threat detection. Ranked 1st regionally and 14th nationally at MACC 2026 (DGSSI).">Actuellement en cycle ingénieur à l'ENSA de Fès, spécialité Développement Numérique et Cybersécurité. Passionné par la sécurité offensive, l'analyse forensique et la détection de menaces par IA. Classé 1er régional et 14ème national au MACC 2026 (DGSSI).</p>
+      </div>
+      <div class="bento-card ao">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 4 3 6 3s6-2 6-3v-5"/></svg></div>
+        <div class="bc-tag">Formation</div>
+        <h3>ENSA Fès</h3>
+        <p data-fr="Cycle Ingénieur — Dév &amp; Cybersec — 2022 / Présent" data-en="Engineering Degree — Dev &amp; Cybersec — 2022 / Present">Cycle Ingénieur — Dév &amp; Cybersec — 2022 / Présent</p>
+      </div>
+      <div class="bento-card ao">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="bc-tag">Distinction</div>
+        <h3>MACC 2026</h3>
+        <p>DGSSI — 1er Régional / 14ème National</p>
+      </div>
+      <div class="bento-card b-full ao">
+        <div class="bc-tag" data-fr="Objectif" data-en="Objective">Objectif</div>
+        <p data-fr="Recherche un stage PFA en cybersécurité à partir de juillet 2026 — pentest, sécurité réseau, SOC, forensique ou tout domaine lié à la sécurité des systèmes d'information." data-en="Seeking a final-year internship in cybersecurity starting July 2026 — pentesting, network security, SOC, forensics, or any field related to information system security.">Recherche un stage PFA en cybersécurité à partir de juillet 2026 — pentest, sécurité réseau, SOC, forensique ou tout domaine lié à la sécurité des systèmes d'information.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="w">
+    <div class="tag"><span data-fr="02 / Projets" data-en="02 / Projects">02 / Projets</span></div>
+    <h2 class="sh" data-fr="Projets <span class='grad'>techniques</span>" data-en="Technical <span class='grad'>projects</span>">Projets <span class="grad">techniques</span></h2>
+    <div class="pgrid">
+      <article class="pcard feat ao">
+        <div class="top"><span class="yr">2024</span><span class="ptag" data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</span></div>
+        <h3>Multi-Honeypots + ELK Stack</h3>
+        <p data-fr="Infrastructure de détection et analyse des menaces en temps réel. Déploiement Docker d'honeypots multi-protocoles (SSH, HTTP, FTP) avec dashboards Kibana interactifs." data-en="Real-time threat detection and analysis infrastructure. Docker deployment of multi-protocol honeypots (SSH, HTTP, FTP) with interactive Kibana dashboards.">Infrastructure de détection et analyse des menaces en temps réel. Déploiement Docker d'honeypots multi-protocoles (SSH, HTTP, FTP) avec dashboards Kibana interactifs.</p>
+        <div class="ptech"><span>Docker</span><span>Elasticsearch</span><span>Logstash</span><span>Kibana</span><span>Python</span></div>
+      </article>
+      <article class="pcard ao">
+        <div class="top"><span class="yr">2024</span><span class="ptag">ML / Security</span></div>
+        <h3 data-fr="Détection Comportementale de Malwares" data-en="Behavioral Malware Detection">Détection Comportementale de Malwares</h3>
+        <p data-fr="Détection de Ransomware et Keyloggers via analyse comportementale avec Scikit-learn. Interface Streamlit pour monitoring temps réel." data-en="Ransomware and Keylogger detection through behavioral analysis with Scikit-learn. Real-time monitoring with Streamlit.">Détection de Ransomware et Keyloggers via analyse comportementale avec Scikit-learn. Interface Streamlit pour monitoring temps réel.</p>
+        <div class="ptech"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Docker</span></div>
+        <a href="https://github.com/simox6v/behavioral_detection" target="_blank" class="plink">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </article>
+      <article class="pcard ao">
+        <div class="top"><span class="yr">2024</span><span class="ptag" data-fr="Réseau / Crypto" data-en="Network / Crypto">Réseau / Crypto</span></div>
+        <h3>Mini VPN User-Space</h3>
+        <p data-fr="VPN minimaliste en Python. Tunnel AES-256-GCM, authentification mutuelle, handshake sécurisé, GUI client/serveur." data-en="Minimalist Python VPN. AES-256-GCM tunnel, mutual authentication, secure handshake, client/server GUI.">VPN minimaliste en Python. Tunnel AES-256-GCM, authentification mutuelle, handshake sécurisé, GUI client/serveur.</p>
+        <div class="ptech"><span>Python</span><span>AES-GCM</span><span>Cryptography</span><span>Tkinter</span></div>
+        <a href="https://github.com/simox6v/mini_vpn" target="_blank" class="plink">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </article>
+      <article class="pcard ao">
+        <div class="top"><span class="yr">2024</span><span class="ptag">Web / Full Stack</span></div>
+        <h3 data-fr="Gestion Passations — CHU Fès" data-en="Procurement Mgmt — CHU Fes">Gestion Passations — CHU Fès</h3>
+        <p data-fr="Application web de gestion hospitalière. Laravel/PHP, MySQL, conception BDD et cycle de vie des équipements." data-en="Hospital management web app. Laravel/PHP, MySQL, DB design and equipment lifecycle management.">Application web de gestion hospitalière. Laravel/PHP, MySQL, conception BDD et cycle de vie des équipements.</p>
+        <div class="ptech"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>Tailwind</span></div>
+        <a href="https://github.com/simox6v/chu_passations" target="_blank" class="plink">GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="w">
+    <div class="tag"><span data-fr="03 / Compétences" data-en="03 / Skills">03 / Compétences</span></div>
+    <h2 class="sh" data-fr="Stack <span class='grad'>technique</span>" data-en="Tech <span class='grad'>stack</span>">Stack <span class="grad">technique</span></h2>
+    <div class="sgrid">
+      <div class="scard ao"><div class="scard-t" data-fr="Langages" data-en="Languages">Langages</div><div class="si"><span class="sd"></span>Python</div><div class="si"><span class="sd"></span>Java</div><div class="si"><span class="sd"></span>PHP</div><div class="si"><span class="sd"></span>JavaScript / TypeScript</div><div class="si"><span class="sd"></span>SQL</div><div class="si"><span class="sd"></span>C / C++</div></div>
+      <div class="scard ao"><div class="scard-t">Web &amp; Mobile</div><div class="si"><span class="sd"></span>Laravel</div><div class="si"><span class="sd"></span>Flask</div><div class="si"><span class="sd"></span>React</div><div class="si"><span class="sd"></span>HTML5 / CSS3</div><div class="si"><span class="sd"></span>Android Studio</div></div>
+      <div class="scard ao"><div class="scard-t" data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</div><div class="si"><span class="sd"></span>Honeypots</div><div class="si"><span class="sd"></span>IDS / IPS</div><div class="si"><span class="sd"></span>Analyse forensique</div><div class="si"><span class="sd"></span>Protocoles réseau</div><div class="si"><span class="sd"></span>Pentest</div></div>
+      <div class="scard ao"><div class="scard-t">DevOps &amp; Data</div><div class="si"><span class="sd"></span>Docker</div><div class="si"><span class="sd"></span>Git</div><div class="si"><span class="sd"></span>Linux</div><div class="si"><span class="sd"></span>MySQL / PostgreSQL</div><div class="si"><span class="sd"></span>Elasticsearch</div></div>
+      <div class="scard ao"><div class="scard-t" data-fr="Intelligence Artificielle" data-en="Artificial Intelligence">Intelligence Artificielle</div><div class="si"><span class="sd"></span>Scikit-learn</div><div class="si"><span class="sd"></span>Machine Learning</div><div class="si"><span class="sd"></span>Détection d'anomalies</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="w">
+    <div class="tag"><span data-fr="04 / Parcours" data-en="04 / Experience">04 / Parcours</span></div>
+    <h2 class="sh" data-fr="Expérience &amp; <span class='grad'>Certifications</span>" data-en="Experience &amp; <span class='grad'>Certifications</span>">Expérience &amp; <span class="grad">Certifications</span></h2>
+    <div class="tl">
+      <div class="tl-i ao">
+        <div class="tl-dot"></div>
+        <div class="tl-d" data-fr="Été 2024" data-en="Summer 2024">Été 2024</div>
+        <div class="tl-h">Stage — CHU de Fès</div>
+        <div class="tl-s" data-fr="Développement Web &amp; Gestion Hospitalière" data-en="Web Development &amp; Hospital Management">Développement Web &amp; Gestion Hospitalière</div>
+        <p data-fr="Développement d'une application web de gestion des passations avec Laravel/PHP et MySQL. Conception de base de données et gestion du cycle de vie des équipements hospitaliers." data-en="Developed a procurement management web application with Laravel/PHP and MySQL. Database design and hospital equipment lifecycle management.">Développement d'une application web de gestion des passations avec Laravel/PHP et MySQL. Conception de base de données et gestion du cycle de vie des équipements hospitaliers.</p>
+      </div>
+    </div>
+    <div class="ch">Certifications</div>
+    <div class="cgrid">
+      <a href="certificat redhat.pdf" target="_blank" class="cc ao">
+        <div class="cd">Mars 2025</div><h4>Red Hat OpenShift Administration I</h4><p>DO180 — Red Hat</p>
+        <div class="arrow" data-fr="Voir le certificat &#8594;" data-en="View certificate &#8594;">Voir le certificat &#8594;</div>
+      </a>
+      <a href="cisco_cyber_verified.pdf" target="_blank" class="cc ao">
+        <div class="cd">Mai 2025</div><h4>Cisco Cybersecurity Essentials</h4><p>Cisco Networking Academy</p>
+        <div class="arrow" data-fr="Voir le certificat &#8594;" data-en="View certificate &#8594;">Voir le certificat &#8594;</div>
+      </a>
+      <a href="clmsCertificate (2).pdf" target="_blank" class="cc ao">
+        <div class="cd">Déc 2024</div><h4>Database Programming with SQL</h4><p>Oracle Academy</p>
+        <div class="arrow" data-fr="Voir le certificat &#8594;" data-en="View certificate &#8594;">Voir le certificat &#8594;</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="w">
+    <div class="tag">05 / Contact</div>
+    <div class="cwrap">
+      <div class="ctx">
+        <h2 class="sh" data-fr="Restons en <span class='grad'>contact</span>" data-en="Let's stay in <span class='grad'>touch</span>">Restons en <span class="grad">contact</span></h2>
+        <p data-fr="Je suis disponible pour un stage PFA en cybersécurité à partir de juillet 2026. N'hésitez pas à me contacter pour discuter d'une opportunité." data-en="I'm available for a cybersecurity internship starting July 2026. Feel free to reach out to discuss opportunities.">Je suis disponible pour un stage PFA en cybersécurité à partir de juillet 2026. N'hésitez pas à me contacter pour discuter d'une opportunité.</p>
+      </div>
+      <div class="clist">
+        <a href="mailto:mohammedlamkhantar2004@gmail.com" class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg><span>mohammedlamkhantar2004@gmail.com</span></a>
+        <a href="tel:+212614026113" class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span>+212 614 026 113</span></a>
+        <a href="https://github.com/simox6v" target="_blank" class="ci"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg><span>github.com/simox6v</span></a>
+        <a href="#" class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Fès, Maroc</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><p>Mohammed Lamkhantar — 2026</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
